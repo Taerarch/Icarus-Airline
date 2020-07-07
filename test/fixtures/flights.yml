@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  departure_date: 2020-07-07 17:15:54
+  destination_date: 2020-07-07 17:15:54
+  origin: MyText
+  destination: MyText
+  airplane_id: 1
+
+two:
+  name: MyText
+  departure_date: 2020-07-07 17:15:54
+  destination_date: 2020-07-07 17:15:54
+  origin: MyText
+  destination: MyText
+  airplane_id: 1
