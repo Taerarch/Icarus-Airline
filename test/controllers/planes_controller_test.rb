@@ -17,7 +17,7 @@ class PlanesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create plane" do
     assert_difference('Plane.count') do
-      post planes_url, params: { plane: { content: @plane.content } }
+      post planes_url, params: { plane: { columns: @plane.columns, name: @plane.name, rows: @plane.rows } }
     end
 
     assert_redirected_to plane_url(Plane.last)
@@ -34,7 +34,7 @@ class PlanesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update plane" do
-    patch plane_url(@plane), params: { plane: { content: @plane.content } }
+    patch plane_url(@plane), params: { plane: { columns: @plane.columns, name: @plane.name, rows: @plane.rows } }
     assert_redirected_to plane_url(@plane)
   end
 

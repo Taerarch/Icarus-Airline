@@ -14,7 +14,9 @@ class PlanesTest < ApplicationSystemTestCase
     visit planes_url
     click_on "New Plane"
 
-    fill_in "Content", with: @plane.content
+    fill_in "Columns", with: @plane.columns
+    fill_in "Name", with: @plane.name
+    fill_in "Rows", with: @plane.rows
     click_on "Create Plane"
 
     assert_text "Plane was successfully created"
@@ -25,7 +27,9 @@ class PlanesTest < ApplicationSystemTestCase
     visit planes_url
     click_on "Edit", match: :first
 
-    fill_in "Content", with: @plane.content
+    fill_in "Columns", with: @plane.columns
+    fill_in "Name", with: @plane.name
+    fill_in "Rows", with: @plane.rows
     click_on "Update Plane"
 
     assert_text "Plane was successfully updated"
