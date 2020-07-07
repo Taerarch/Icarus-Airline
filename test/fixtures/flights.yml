@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   name: MyText
   departure_date: 2020-07-07 17:15:54
   destination_date: 2020-07-07 17:15:54
@@ -15,3 +16,17 @@ two:
   origin: MyText
   destination: MyText
   airplane_id: 1
+=======
+  flight_num: 1
+  date: MyText
+  to: MyText
+  from: MyText
+  plane: MyText
+
+two:
+  flight_num: 1
+  date: MyText
+  to: MyText
+  from: MyText
+  plane: MyText
+>>>>>>> d950933d5a4b254c956968eed91cd84bc2071599
