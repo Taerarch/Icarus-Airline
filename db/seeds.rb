@@ -1,7 +1,7 @@
 User.destroy_all
-u1 = User.create :name => 'matt', :password => 'chicken'
-u2 = User.create :name => 'behdad', :password => 'chicken'
-u3 = User.create :name => 'cesar', :password => 'chicken'
+u1 = User.create :email => 'matt@ga.com', :password => 'chicken'
+u2 = User.create :email => 'behdad@ga.com', :password => 'chicken'
+u3 = User.create :email => 'cesar@ga.com', :password => 'chicken'
 puts "#{ User.count } users"
 
 Flight.destroy_all
