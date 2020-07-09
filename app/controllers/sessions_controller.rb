@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
       redirect_to admin_url
     else
       redirect_to login_url, alert:"Invalid Username"
-
+    end
   end
 
   def destroy
